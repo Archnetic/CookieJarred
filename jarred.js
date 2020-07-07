@@ -1,28 +1,6 @@
-/*function jarCookie(){
-    var cookie = document.getElementsByClassName("maincontent")
-    if(typeof(cookie) != "undefined" && cookie != null){
-        console.log("finally")
-        
-    }
-    console.log(cookie)
-    cookie.remove();
-
-}*/
-
-
-/*function jarCookie(tabs){
-    for (let tab of tabs) {
-        // tab.url requires the `tabs` permission
-        console.log(tab.url);
-      }
-}
-
-var getCurrTab = browser.tabs.query({active: true, currentWindow: true});
-browser.webNavigation.onCompleted.addListener(jarCookie);*/
-
-function logTabs(tabs) {
-  // tabs[0].url requires the `tabs` permission
+function lidTheJar(tabs) {
   console.log(tabs[0].url);
+  browser.tabs.executeScript({file: "content-script.js", allFrames: true})
 }
 
 function onError(error) {
@@ -31,7 +9,8 @@ function onError(error) {
 
 function jarCookie(){
     let querying = browser.tabs.query({currentWindow: true, active: true});
-    querying.then(logTabs, onError);
+    querying.then(lidTheJar, onError);
     
 }
+
 browser.webNavigation.onCompleted.addListener(jarCookie);

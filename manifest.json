@@ -3,7 +3,8 @@
     "manifest_version": 2,
     "homepage_url": "https://github.com/ChasemLose/CookieJarred",
     "name": "Cookie Jarred",
-    "permissions": ["cookies", "browserSettings", "alarms", "privacy", "browsingData", "tabs", "webNavigation"],
+    "permissions": ["cookies", "browserSettings", "alarms", "privacy", "browsingData", "tabs", "webNavigation", "activeTab", "*://*.gov/*",
+         "*://*.com/*" , "*://*.net/*", "*://*.org/*", "*://*.edu/*"],
     "background": {
         "scripts": ["jarred.js"]
     },
