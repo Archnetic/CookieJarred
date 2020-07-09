@@ -1,0 +1,17 @@
+{
+    "description": "Automagically tells websites to denies permissions to store cookies",
+    "manifest_version": 2,
+    "homepage_url": "https://github.com/ChasemLose/CookieJarred",
+    "name": "Cookie Jarred",
+    "permissions": ["cookies", "browserSettings", "alarms", "privacy", "browsingData", "tabs", "webNavigation", "activeTab", "*://*.gov/*",
+         "*://*.com/*" , "*://*.net/*", "*://*.org/*", "*://*.edu/*"],
+    "background": {
+        "scripts": ["jarred.js"]
+    },
+    "version": "1.0",
+    "applications": {
+        "gecko": {
+            "strict_min_version": "55.0a2"
+        }
+    }
+}
