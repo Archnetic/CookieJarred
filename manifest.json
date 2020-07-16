@@ -13,5 +13,10 @@
         "gecko": {
             "strict_min_version": "55.0a2"
         }
+    },
+    "broser_action": {
+        "default_popup": "cookiejar.html",
+        "default_title": "Cookie Jarred",
+        "default_icon": "cookies-from-Freepik-on-flaticon.com.png"
     }
 }
