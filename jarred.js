@@ -1,16 +1,19 @@
 function lidTheJar(tabs) {
-  console.log(tabs[0].url);
   browser.tabs.executeScript({file: "content-script.js", allFrames: true})
 }
 
 function onError(error) {
-  console.log(`Error: ${error}`);
+  console.log(`Error: ${error}`)
 }
 
 function jarCookie(){
-    let querying = browser.tabs.query({currentWindow: true, active: true});
-    querying.then(lidTheJar, onError);
-    
+    let querying = browser.tabs.query({currentWindow: true, active: true})
+    querying.then(lidTheJar, onError)
+    cookieLabel()
 }
 
-browser.webNavigation.onCompleted.addListener(jarCookie);
+function cookieLabel(){
+
+}
+
+browser.webNavigation.onCompleted.addListener(jarCookie)
