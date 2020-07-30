@@ -1,7 +1,7 @@
 {
-    "description": "Automagically tells websites to denies permissions to store cookies",
+    "description": "Removes the layer of html that sites send asking the user to accept or deny cookies.",
     "manifest_version": 2,
-    "homepage_url": "https://github.com/ChasemLose/CookieJarred",
+    "homepage_url": "https://github.com/Archnetic/CookieJarred",
     "name": "Cookie Jarred",
     "permissions": ["tabs", "webNavigation", "*://*.gov/*",
          "*://*.com/*" , "*://*.net/*", "*://*.org/*", "*://*.edu/*"],
