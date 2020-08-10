@@ -6,7 +6,7 @@
     "permissions": ["tabs", "webNavigation", "*://*.gov/*",
          "*://*.com/*" , "*://*.net/*", "*://*.org/*", "*://*.edu/*"],
     "background": {
-        "scripts": ["jarred.js"]
+        "scripts": ["/scripts/jarred.js"]
     },
     "version": "1.0",
     "applications": {
@@ -15,8 +15,8 @@
         }
     },
     "browser_action": {
-        "default_icon": "cookies-from-Freepik-on-flaticon.com.png",
+        "default_icon": "/img/cookies-from-Freepik-on-flaticon.com.png",
         "default_title": "Cookie Jarred",
-        "default_popup": "home.html"
+        "default_popup": "/views/home.html"
       }
 }
