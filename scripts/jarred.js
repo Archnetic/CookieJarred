@@ -1,5 +1,5 @@
 function lidTheJar(tabs) {
-  browser.tabs.executeScript({file: "content-script.js", allFrames: true})
+  browser.tabs.executeScript({file: "/scripts/content-script.js", allFrames: true})
 }
 
 function onError(error) {
